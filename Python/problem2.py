@@ -24,7 +24,7 @@ def sumevenfib(i):
     retval = 0
     for x in range(0,i+1,3):#Each multiple of 3 fib number is even 
         retval += fib(x)
-        print("Retval is currently: " +str(retval))
+  #      print("Retval is currently: " +str(retval))
     return retval
 
 #print(fib(34))
