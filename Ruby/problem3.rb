@@ -11,15 +11,10 @@ def brute_force_prime(num)
   factors = []
   counter = 2
   while counter <= num
-    if counter % 1000000000 == 0
-        puts "Currently at #{counter}"
     end
     if num % counter == 0
       factors << counter
       num = num/counter
-      #if counter % 100 == 0
-        puts "Currently at #{counter}"
-      #end
     else 
       counter += 1
     end
