@@ -9,9 +9,11 @@
 
 def brute_force_prime(num)
   factors = []
-  half = num/2
   counter = 2
-  while counter < half
+  while counter <= num
+    if counter % 1000000000 == 0
+        puts "Currently at #{counter}"
+    end
     if num % counter == 0
       factors << counter
       num = num/counter
@@ -26,4 +28,5 @@ def brute_force_prime(num)
 end
 
 
+#brute_force_prime(13195)
 brute_force_prime(600851475143)
