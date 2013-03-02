@@ -38,11 +38,13 @@ while(counter <= limit):
             if(curCheck in prime_list):
                 continue
             else:
-                prime_list.append(curCheck); counter += 1; print("Prime " + str(len(prime_list)) + " Found: " + str(curCheck)); curCheck +=1
+                prime_list.append(curCheck); counter += 1; 
+                #print("Prime " + str(len(prime_list)) + " Found: " + str(curCheck)); 
+                curCheck +=1
     else: #If it the current check ends in a not prime number
         curCheck += 1; continue
             
-print(prime_list)
+print(prime_list[-1])
     
 
         
