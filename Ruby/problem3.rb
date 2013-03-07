@@ -11,7 +11,6 @@ def brute_force_prime(num)
   factors = []
   counter = 2
   while counter <= num
-    end
     if num % counter == 0
       factors << counter
       num = num/counter
