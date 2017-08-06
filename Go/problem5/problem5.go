@@ -11,13 +11,13 @@ package main
 import "fmt"
 
 func smallestMultiple(x int) int {
-	answer := 2 // Start at 2, everything is divisible by 1
+	answer := x // Start with base number to check
 	for i := x; i > 1; i-- {
 		if answer%i == 0 {
 			continue
 		} else {
 			i = x
-			answer++
+			answer += x // Only check multiples of x
 		}
 	}
 	return answer
